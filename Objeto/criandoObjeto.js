@@ -2,7 +2,10 @@
 
 //usando a notação literal
 const obj1 = {
-    //conteúdo aqui
+   nome: 'Jonathan',
+   sobrenome: 'Lopes',
+   idade: '26', //Exemplo de conteúdo
+   cidade: 'São Paulo'
 }
 
 //Object em JS
@@ -41,6 +44,18 @@ const f2 = criarFuncionario('Maria', 8490, 1)
 
 console.log(f1.getSalario(), f2.getSalario())
 
+// Outro exemplo de Function Factory
+
+function criaPessoa(nome, sobrenome, idade){ //O conteúdo dentro dos () na função é chamado de parâmetro
+    return {
+        nome,
+        sobrenome,
+        idade
+    };
+}
+
+const pessoa1 = criaPessoa('Luiz', 'Miranda', 25); // E o conteúdo que é passado para esse parâmetro é chamado de argumento
+console.log(pessoa1);
 
 //Object.create
 
