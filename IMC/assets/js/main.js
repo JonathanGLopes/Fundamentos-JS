@@ -26,7 +26,10 @@ $form.addEventListener("submit", function (event){
     const imc = getImc(valorPeso, valorAltura);
     const getNivelIMC = nivelIMC(imc);
 
-    console.log(imc, getNivelIMC);
+    const msg = `Seu IMC é ${imc} (${getNivelIMC}).`;
+    
+    setResultado(msg, true)
+
 });
 
 function nivelIMC(imc){
@@ -61,8 +64,13 @@ function criaP (){
 function setResultado (msg, isValid){
     const resultado = document.querySelector(".imc-resultado");
     resultado.innerHTML = '';
-
     const p = criaP();
+
+    if(isValid){
+        p.classList.add("imc-valido");
+    } else {
+        p.classList.add("imc-invalido");
+    }
     p.innerHTML = msg;
     resultado.appendChild(p);
 }
