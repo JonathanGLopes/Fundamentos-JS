@@ -1,22 +1,24 @@
-// function declaration
+//Maneiras de declarar uma função
 
-function soma (x, y){
-    return x + y
+// Declaração literal 
+function cumprimento(){
+    console.log("Olá");
 }
 
-console.log(soma(3, 4))
+cumprimento();
 
-// function expression
-const sub = function (x, y){
-    return x - y
+// Function expression
+const dado = function(){
+    console.log("Sou um dado");
+};
+
+function executaFuncao(funcao){
+    funcao();
 }
+executaFuncao(dado);
 
-console.log(sub(4, 6))
-
-// named function expression
-const mult = function mult (x, y){
-    return x * y
+// Arrow function
+const funcaoArrow = () => {
+    console.log("Sou uma arrow function");
 }
-
-console.log(mult(7, 3))
-
+funcaoArrow();
