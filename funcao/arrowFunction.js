@@ -12,4 +12,11 @@ let ola = function () {
     return "Olá"
 }
 
-ola = () => 'Olá'
+const anosAposentadoria = (anoNascimento, nome) => {
+    const idade = 2037 - anoNascimento;
+    const aposentadoria = 65 - idade;
+    return `${nome} irá se aposentar em ${aposentadoria} anos`;
+}
+
+console.log(anosAposentadoria(1995, 'Jonathan'));
+console.log(anosAposentadoria(1980, 'Marcos'));
