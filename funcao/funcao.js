@@ -8,12 +8,19 @@ function log(){
 // Chamar / Invocar / Rodar a função
 log();
 
+function cortaFrutas(fruta){
+    return fruta * 4;
+}
+
+//Aqui nós vamos chamar a função cortaFruta dentro da função frutas
 function frutas(laranjas, acerolas){
+    const pedacoLaranja = cortaFrutas(laranjas);
+    const pedacoAcerola = cortaFrutas(acerolas);
+
     console.log(laranjas, acerolas);
-    const suco = `Suco com ${laranjas} laranjas e ${acerolas} acerolas.`;
+    const suco = `Suco com ${pedacoLaranja} pedaços de laranjas e ${pedacoAcerola} pedaços de acerolas.`;
     return suco;
 }
 
-const sucoFrutas = frutas(5, 3);
-console.log(sucoFrutas);
+console.log(frutas(3, 2));
 
