@@ -4,6 +4,17 @@ console.log(nome)
 console.log(nome.length)
 
 
+const amigo1 = 'Matheus';
+const amigo2 = 'Leonardo';
+const amigo3 = 'Carlos';
+// Ao invés de armazenar nomes cada um em uma variável, podemos fazer um array para armezenar todos os dados
+
+
+const amigos = ['Geovane', 'Alan', 'José', 'Felipe', 'Gustavo'];
+console.log(amigos);
+
+
+
 
 const calculaIdade = function(anoNascimento){
     return 2037 - anoNascimento;
