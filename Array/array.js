@@ -12,6 +12,9 @@ const amigo3 = 'Carlos';
 
 const amigos = ['Geovane', 'Alan', 'José', 'Felipe', 'Gustavo'];
 console.log(amigos);
+//E com o push nós podemos adicionar outro dado no fim do array, como no exemplo abaixo.
+amigos.push("Marcos");
+console.log(amigos);
 
 
 
