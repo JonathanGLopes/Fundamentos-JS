@@ -12,6 +12,9 @@ for (let i = 0; i < frutas.length; i++) {
 // console.log("linha 4");
 // console.log("linha 5");
 
+
+// O loop continua sendo executado enquanto a condição for verdadeira.
 for (let i = 0; i <= 5; i ++) {
     console.log(`Linha ${i}`) 
 }
+
