@@ -1,4 +1,5 @@
 // Ele funciona muito bem quando não sabemos a quantidade de parâmetros que a função irá receber, como no exemplo abaixo.
+// Ao usa-lo, ele irá retornar um array.
 
 function sorteador(...numeros){
     console.log(numeros);
