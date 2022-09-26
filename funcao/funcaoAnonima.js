@@ -1,29 +1,31 @@
-const soma = function(x, y){
-    return x + y
-}
+/**
+ 1 - Os parênteses, que é por onda a função recebe os argumentos (assim com as funções tradicionais)
+ 2 - "seta" => - Responsável pelo nome "arrow"
+ 3 - Chaves: o bloco de código que representa o corpo/escopo da função
+ 4 - Uma arrow function sempre será uma função anonima
 
-const imprimirResultado = function(a, b, operacao = soma){
-    console.log(operacao(a, b))
-}
+ Abaixo alguns exemplos de utilização
+ */
 
-imprimirResultado(3, 4);
+ function somar(a, b){
+    let total = a + b;
+    return console.log(total);
+ }
 
-imprimirResultado(3, 4, soma);
+ somar(10, 30);
+ console.log("=============")
 
-imprimirResultado(3, 4, function(x, y){
-    return x - y
+ let subtrair = (valor1, valor2) => {
+    let total = valor1 - valor2;
+    console.log(total);
+ }
+
+ subtrair(50, 25);
+ console.log("=============")
+
+ 
+let numeros = [1, 3, 5, 10];
+
+numeros.map((item) =>{
+    console.log(item);
 });
-
-//arrow function sempre será uma função anonima
-
-imprimirResultado(3, 4, (x, y) => x * y)
-
-//Também é possível criar uma função dentro de um objeto
-
-const pessoa = {
-    falar: function(){
-        console.log("teste");
-    }
-}
-
-pessoa.falar();
