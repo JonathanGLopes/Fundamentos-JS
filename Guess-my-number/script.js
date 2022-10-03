@@ -21,6 +21,7 @@ btnCheck.addEventListener("click", (e)=>{
         
     } else if (input === secretNumber){
         message.textContent = "🎉 Correct Number!"
+        document.body.style.backgroundColor = "green";
     } else if(input > secretNumber){
         message.textContent = "📈 Too high!";
     } else if(input < secretNumber){
