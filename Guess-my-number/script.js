@@ -21,9 +21,12 @@ btnCheck.addEventListener("click", (e)=>{
         
     } else if (input === secretNumber){
         message.textContent = "🎉 Correct Number!"
-        document.body.style.backgroundColor = "green";
+        document.body.style.backgroundColor = "#60b347";
+        guessNumber.style.width = "30rem";
+
     } else if(input > secretNumber){
         message.textContent = "📈 Too high!";
+        
     } else if(input < secretNumber){
         message.textContent = "📉 Too low!";
     }
