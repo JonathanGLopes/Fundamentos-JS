@@ -6,6 +6,17 @@ function soma(a, b){
 
 console.log(soma(10, 5));
 
+
+// Retornando o valor completo
+function fullName(){
+    let firstName = 'Jonathan';
+    let lastName = 'Lopes';
+    let name = `${firstName} ${lastName}`;
+    return name;
+}
+
+console.log(fullName());
+
 //Retornando um objeto literal
 function criaPessoa(nome, sobrenome){
     return {nome, sobrenome};
