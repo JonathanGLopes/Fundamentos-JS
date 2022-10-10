@@ -10,7 +10,6 @@ const message = document.querySelector(".message");
 
 const secretNumber = Math.trunc(Math.random() * 20) +1;
 const inicialScore = 20;
-guessNumber.textContent = secretNumber;
 
 btnCheck.addEventListener("click", (e)=>{
     e.preventDefault();
@@ -21,6 +20,7 @@ btnCheck.addEventListener("click", (e)=>{
         
     } else if (input === secretNumber){
         message.textContent = "🎉 Correct Number!"
+        guessNumber.textContent = secretNumber;
         document.body.style.backgroundColor = "#60b347";
         guessNumber.style.width = "30rem";
 
@@ -30,4 +30,16 @@ btnCheck.addEventListener("click", (e)=>{
     } else if(input < secretNumber){
         message.textContent = "📉 Too low!";
     }
+});
+
+
+btnAgain.addEventListener("click", (e) =>{
+    guessNumber.style.width = "15rem";
+    guessNumber.textContent = "?";
+    message.textContent = "Start guessing...";
+    score.textContent = inicialScore;
+    document.body.style.backgroundColor = "#222";
+    document.querySelector(".guess").value = '';
+    document.querySelector(".guess").focus();
+
 });
