@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Sidebar</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img class="logo-img" src="https://pbs.twimg.com/profile_images/1586015745527488516/ximZsn0d_400x400.jpg" alt="Foto do usuário">
+        </header>
+        <nav>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined"> Home</i>
+                    <span>Home</span>
+                </span>
+            </button>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined"> Tag</i>
+                    <span>Explorar</span>
+                </span>
+            </button>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined"> Email</i>
+                    <span>Mensagens</span>
+                </span>
+            </button>
+            <button>
+                <span>
+                    <i class="material-symbols-outlined"> Person</i>
+                    <span>Profile</span>
+                </span>
+            </button>
+        </nav>
+    </aside>
+
+    <!-- Criando menu mobile -->
+    <button class="button-mobile" onclick="toggleMenu()">
+        <i class="material-symbols-outlined"> Menu</i>
+        <span>Menu</span>
+    </button>
+
+    <nav class="menu-mobile" id="menu-mobile">
+        <button class="button-close" onclick="toggleMenu()">
+            <span>
+                <i class="material-symbols-outlined"> Close</i>
+            </span>
+        </button>
+
+        <button>
+            <span>
+                <i class="material-symbols-outlined"> Home</i>
+                <span class="mobile-text">Home</span>
+            </span>
+        </button>
+        <button>
+            <span>
+                <i class="material-symbols-outlined"> Tag</i>
+                <span class="mobile-text">Explorar</span>
+            </span>
+        </button>
+        <button>
+            <span>
+                <i class="material-symbols-outlined"> Email</i>
+                <span class="mobile-text">Mensagens</span>
+            </span>
+        </button>
+        <button>
+            <span>
+                <i class="material-symbols-outlined"> Person</i>
+                <span class="mobile-text">Profile</span>
+            </span>
+        </button>
+    </nav>
+
+    <main class="main">
+        <h1>Bem vindos a página</h1>
+        <span>Jonathan passou por aqui!</span>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

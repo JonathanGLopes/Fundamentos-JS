@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #FFF;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1px solid #2F3336;
+    transition: all 0.4s;
+}
+
+.sidebar-header {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.logo-img {
+    width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.logo-img:hover{
+    transform: scale(1.5);
+}
+
+.sidebar button {
+    height: 60px;
+    background-color: transparent;
+    border: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.sidebar button > span {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0 16px 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.sidebar button:hover > span {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.sidebar button i {
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+}
+
+.sidebar button span {
+    font-size: 1rem;
+}
+
+.sidebar > nav {
+    /*  O primeiro 1 nesse flex é o flex-grow: Define quanto nosso item irá crescer 
+        o segundo é o flex-shrink: Define o quanto nosso item irá diminuir "fator de redução"
+        O terceiro é o flex-basis: O tamanho base de cada item
+    */
+
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.main {
+    margin-left: 250px;
+    margin-right: 6px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Ajustando sidebar com os icones  */
+
+@media (width < 920px){
+    .sidebar {
+        width: 72px;
+    }
+
+    .sidebar button > span {
+        width: 50px;
+    }
+
+    .sidebar button > span > span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .main {
+        transition: margin 0.4s;
+        margin-left: 78px;
+    }
+}
+
+.button-mobile {
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+.button-close span i{
+    font-size: 2.5rem;
+}
+
+.button-mobile, .menu-mobile {
+    display: none;
+    align-self: flex-start;
+    align-items: center;
+    margin: 16px;
+    background-color: transparent;
+    color: #FFF;
+    border: 0;
+}
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile-active {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.menu-mobile-active button {
+    background-color: transparent;
+    border: 0;
+    color: inherit;
+    margin-bottom: 1rem;
+}
+
+.menu-mobile-active button > span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.mobile-text {
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+@media (max-width: 480px){
+    .sidebar {
+        display: none;
+    }
+
+    .button-mobile{
+        display: flex;
+    }
+
+}
