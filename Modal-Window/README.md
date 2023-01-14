@@ -4,7 +4,7 @@
 
 
 ### Tela principal
-<img width="500" src="modal-button.jpg">
+<img width="500" src="modal-button.JPG">
 
 ### Tela da modal
-<img width="500" src="modal.jpg">
+<img width="500" src="modal.JPG">
