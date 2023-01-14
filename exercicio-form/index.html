@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Exercícios</title>
+    <title>Exercício Form</title>
 </head>
 <body>
-    <form action="" class="form">
-        <p>Nome: <input type="text" class="nome"></p>
-        <p>Sobrenome: <input type="text" class="sobrenome"></p>
-        <p>Peso: <input type="text" class="peso"></p>
-        <p>Altura: <input type="text" class="altura"></p>
+   <h1>Formulário</h1>
+   <form id="form">
+    <label for="name">Nome:</label>
+    <input type="text" id="name">
 
-        <button>Enviar</button>
-    </form>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email">
 
-    <div class="resultado">
+    <label for="password">Senha:</label>
+    <input type="password" id="password">
 
-    </div>
+    <label for="job">Situação de trabalho:</label>
+    <select name="job" id="job">
+        <option value="">Está buscando emprego?</option>
+        <option value="yes">Sim</option>
+        <option value="no">Não</option>
+    </select>
+
+    <label for="message">Mensagem:</label>
+    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+    
+    <button type="submit">Enviar</button>
+   </form>
 
     <script src="js/script.js"></script>
 </body>
