@@ -1,45 +1,57 @@
-function meuEscopo(){
-    const $form = document.querySelector(".form");
-    const $resultado = document.querySelector(".resultado");
+const form = document.querySelector("#form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const passwordInput = document.querySelector("#password");
+const jobSelect = document.querySelector("#job");
+const messageTextArea = document.querySelector("#message");
 
-    // Foi utilizado $nome = $form para selecionar os inputs no lugar
-    // de $nome = document já sabemos onde os inputs estão, então a busca é direto dentro do form
-    const pessoas = [];
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-    function recebeEventoForm (event){
-        event.preventDefault();
-        const $nome = $form.querySelector(".nome");
-        const $sobrenome = $form.querySelector(".sobrenome");
-        const $peso = $form.querySelector(".peso");
-        const $altura = $form.querySelector(".altura");
-
-        //Abaixo estamos colocando um objeto dentro do array de pessoas para receber o valor insero nos inputs
-        // pessoas.push({
-        //     nome: $nome.value,
-        //     sobrenome: $sobrenome.value,
-        //     peso: $peso.value,
-        //     altura: $altura.value
-        // }); 
-        //Pode ser feito como no exemplo acima, já inserir o objeto criado dentro do push ou cria-lo primeiro como feito abaixo
-
-        const funcionarios = {
-            nome: $nome.value,
-            sobrenome: $sobrenome.value,
-            peso: $peso.value,
-            altura: $altura.value
-        }
-
-        //Aqui inserimos os dados do objeto formularios dentro do array pessoas
-        pessoas.push(funcionarios);
-
-        //Aqui damos um console log para ver os objetos criados a partir do que foi inserido no form
-        console.log(pessoas);
-
-        //Aqui inserimos os dados na div resultado 
-        $resultado.innerHTML += `<p> ${$nome.value} ${$sobrenome.value} ${$peso.value} ${$altura.value} </p>`
+    //Verificando se os campos estão preenchidos
+    if(nameInput.value === ''){
+        alert("Por favor, preencha o seu nome");
+        return;
     }
 
-    $form.addEventListener("submit", recebeEventoForm);
+    if(emailInput.value === '' || !isEmailValid(emailInput.value)){
+        alert("Por favor, preencha seu email");
+        return;
+    }
+
+    if(!validatePassword(passwordInput.value, 8)){
+        alert("A senha precisa ter no mínimo 8 digitos");
+        return;
+    }
+
+    if(jobSelect.value === ''){
+        alert("Por favor, selecione a sua situação");
+        return;
+    }
+
+    if(messageTextArea.value === ''){
+        alert("Por favor, escreva uma mensagem");
+        return;
+    }
+
+    form.submit();
+})
+
+function isEmailValid(email){
+    const emailRegex = new RegExp(
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+    );
+
+    if(emailRegex.test(email)){
+        return true;
+    }
+    return false;
 }
 
-meuEscopo();
+function validatePassword(password, minDigits){
+    if(password.length >= minDigits){
+        return true
+    }
+
+    return false
+}
