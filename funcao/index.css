@@ -94,3 +94,10 @@ a {
         left: 0;
     }
 }
+
+
+.callback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
