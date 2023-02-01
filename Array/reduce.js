@@ -27,3 +27,21 @@ const maisVelha = pessoas.reduce(function(acumulador, valor){
 });
 
 console.log(maisVelha);
+
+// Unindo os métodos
+// Retorne a some do dobro dos pares
+// Filtrar pares
+// Dobrar os valores
+// Reduzir (somar tudo)
+
+const numerosPares = numeros.filter(function(valor){
+    return valor % 2 === 0; // pegando os pares
+}).map(function(valor){
+    return valor * 2;
+}).reduce(function(ac, valor){
+    return ac + valor;
+});
+
+// Assim nós usamos cada método para cumprir a sua função. Filtrando os números pares, dobrando os mesmo e reduzindo a um único valor, que foi a soma de todos.
+
+console.log(numerosPares)
