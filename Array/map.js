@@ -52,6 +52,9 @@ const meuArray = [
     [90, 100],
 ];
 
+
+// Neste exemplo o valor representado pelo item na função é o próprio array, pois como podemos ver, o meuArray contém vários arrays dentro dele, então o subItem que fica responsável pelo valor de cada array.
+
 const novoArray = meuArray.map(function(item){
     let soma = 0;
     item.forEach(function(subItem){
