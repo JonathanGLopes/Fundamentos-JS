@@ -1,29 +1,24 @@
-// Coleção dinâmica de pares chave/valor
+const pessoa1 = new Object();
+pessoa1.nome = 'Jonathan';
+pessoa1.sobrenome = 'Lopes';
+pessoa1.idade = 27;
+pessoa1.falarNome = function(){
+    return (`${this.nome} está falando seu nome`);
+};
+pessoa1.dataNascimento = function(){
+    const dataAtual = new Date();
+    return dataAtual.getFullYear() - this.idade;
+};
 
-const carro = {
-    modelo: 'A4',
-    valor: 89000,
-    proprietario: {
-        nome: 'Raul',
-        idade: 56,
-        endereco: {
-            logradouro: 'Rua ABC',
-            numero: 123,
-        }
-    },
-    condutores: [{
-        nome: 'Junior',
-        idade: 19
-    },{
-        nome: 'Ana',
-        idade: 42
-    }],
-    
-    calcularValorSeguro: function(){
-        //...
-    }
+console.log(pessoa1.dataNascimento());
+
+// Criando molde de um objeto com Constructor Function
+
+function Pessoa(nome, sobrenome, idade){
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+    this.idade = idade;
 }
 
-//Exemplo simples para mostrar como um objeto pode ter um conjunto de objetos dentro de um array e também uma função dentro do objeto carro
-
-console.log(carro)
+const p1 = new Pessoa('Jonathan', 'Lopes', 27);
+console.log(p1);
