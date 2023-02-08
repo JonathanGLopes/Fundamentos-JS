@@ -22,8 +22,12 @@ const segundoItem = Object.assign({}, produto, { quantidade: 5});
 console.log(produto);
 console.log(item);
 console.log(segundoItem);
+
 // Utilizando o método abaixo, nós podemos ver como estão as configurações relacionadas ao define property
 console.log(Object.getOwnPropertyDescriptor(item, 'material'));
+
 // Com o Object.values nós retornando apenas o valor da chave, assim como com o Object.keys nós temos o retorno da chave.
 // E para obter os dois, nós usamos o Obect.entries
 console.log(Object.entries(segundoItem));
+console.log(Object.keys(segundoItem));
+console.log(Object.values(segundoItem));
