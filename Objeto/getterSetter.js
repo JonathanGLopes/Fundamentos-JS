@@ -1,3 +1,8 @@
+/*
+    Em JavaScript, os getters e setters são funções que são usadas para obter e definir valores de propriedades de objetos, respectivamente. 
+    Eles são uma forma de encapsular o estado de um objeto e controlar o acesso a ele.
+*/
+
 function Produto(nome, preco, estoque){
     this.nome = nome;
     this.preco = preco;
