@@ -1,19 +1,21 @@
-function getSomeData() {
+function saudacao(msg){
   return new Promise((resolve, reject) => {
-    // Simulando uma chamada assíncrona para uma API externa
-    setTimeout(() => {
-      const data = 'Deu certo';
-      resolve(data);
-    }, 1000);
-  });
+      if(typeof msg !== 'string'){
+        reject("Erro: A mensagem não pode ser um número")
+        return
+      }
+      resolve("Saudação enviada!");
+  })
+    .then(valor => {
+      console.log(valor);
+    })
+    .then(function(){
+      console.log("Segundo then enviado.");
+    })
+    .catch(erro => {
+      console.log(erro);
+    })
 }
 
-
-
-getSomeData()
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error(error);
-  });
+saudacao('Olá');
+saudacao(2023);
