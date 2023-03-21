@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: RGB(40, 42, 54);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 500px;
+    height: 800px;
+    padding: 1rem 2rem;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    overflow: auto;
+}
+
+i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    background-color: lightgray;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.lixo {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: red;
+}
+
+.modal {
+    width: 500px;
+    height: 150px;
+    background-color: #FFF;
+    position: absolute;
+    top: 200px;
+    padding: 1rem 2rem;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.item {
+    padding: .5rem .5rem;
+    border-radius: 6px;
+    width: 300px;
+}
+
+.add_item {
+    border-radius: 6px;
+    padding: .5rem .5rem;
+    cursor: pointer;
+}
+
+.add_item:hover {
+    background-color: gray;
+    color: #FFF;
+    transition: 200ms;
+}
