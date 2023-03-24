@@ -12,7 +12,7 @@ body {
     width: 500px;
     height: 800px;
     padding: 1rem 2rem;
-    background-color: gray;
+    background-color: rgb(251, 246, 181);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -44,7 +44,7 @@ li {
     text-decoration: none;
     list-style: none;
     position: relative;
-    background-color: lightgray;
+    background-color: #FFF;
     padding: 6px;
     border-radius: 6px;
 }
