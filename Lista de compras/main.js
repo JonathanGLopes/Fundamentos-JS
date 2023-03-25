@@ -5,6 +5,7 @@ const $inputItem = document.querySelector(".item");
 const $lista = document.querySelector(".lista");
 const $addProduto = document.querySelector(".add_item");
 const form = document.querySelector("form");
+const $delete = document.querySelectorAll(".lixo");
 
 
 form.addEventListener("submit", (e) => {
@@ -36,11 +37,17 @@ function newLi(){
     const icon = document.createElement("i");
     icon.classList.add("fa-solid", "fa-delete-left", "lixo");
     li.appendChild(icon);
+
+    icon.onclick = function() {
+        this.parentNode.remove();
+        // O this aqui se refere ao próprio botão que foi clicado
+        // O this dentro de uma função de callback se refere ao próprio elemento
+    }
+
     $inputItem.value = '';
     $inputItem.focus();
     document.querySelector("span").style.visibility = "hidden";
 }
-
 
 function showModal() {
     $novoProduto.addEventListener("click", () => {
