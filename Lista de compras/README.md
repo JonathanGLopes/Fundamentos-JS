@@ -9,3 +9,7 @@
 <img width="500" src="lista-compra.png">
 
 <img width="500" src="lista-add.png">
+
+
+## Status
+<p>O projeto da lista está finalizado, mas sujeito a melhorias conforme aprender adicionar novas funcionalidades. </p>
