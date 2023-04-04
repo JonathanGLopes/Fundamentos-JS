@@ -15,4 +15,5 @@ class Tarefa {
   }
 
 const manutencao = new Tarefa('Manutenção em todas máquinas do escritório', '20/04/2023');
+manutencao.adiar("15/05/2023");
 console.log(manutencao);
