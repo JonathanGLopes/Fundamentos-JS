@@ -14,7 +14,7 @@ body {
 
 main {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .divSearch {
@@ -26,4 +26,22 @@ main {
 input {
     padding: 5px;
     outline: none;
+}
+
+.div {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.nomes, .ids {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
