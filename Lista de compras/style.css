@@ -32,6 +32,19 @@ header {
     justify-content: space-between;
 }
 
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pesquisar {
+    height: 30px;
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+
 ul {
     padding: 0;
     display: flex;
