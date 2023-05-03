@@ -16,10 +16,16 @@ function gerarGif(dados){
     })
     .then(function(dados) {
         console.log(dados);
-        const imgPath = dados.data[randomNum].images.original.url;
-        const img = document.createElement("img");
-        img.setAttribute("src", imgPath);
-        gifArea.append(img);
+        const imagens = dados.data.map(img => img.images);
+        imagens.forEach(imagem => {
+            const criaImg = document.createElement("img");
+            const criaA = document.createElement("a");
+            criaA.setAttribute("href", imagem.original.url);
+            criaImg.setAttribute("src", imagem.original.url);
+            criaA.appendChild(criaImg);
+            gifArea.appendChild(criaA);
+            console.log(imagem)
+        });
     })
     .catch(function(erro){
         console.log(erro);

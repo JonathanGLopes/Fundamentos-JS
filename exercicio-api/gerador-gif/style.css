@@ -22,12 +22,14 @@ h1 {
 
 .gif {
   width: 50%;
+  height: 700px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 1rem;
   margin: 0 auto;
   place-items: center;
+  overflow-y: scroll;
 }
 
 input, .botao {
