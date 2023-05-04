@@ -15,6 +15,7 @@ function gerarGif(dados){
         return response.json()
     })
     .then(function(dados) {
+        limpaImg();
         console.log(dados);
         const imagens = dados.data.map(img => img.images);
         imagens.forEach(imagem => {
@@ -42,4 +43,9 @@ function campoVazio(){
     } else {
         document.querySelector(".erro").textContent = "";
     }
+}
+
+function limpaImg(){
+    const div = document.querySelector(".gif");
+    div.innerHTML = "";
 }
