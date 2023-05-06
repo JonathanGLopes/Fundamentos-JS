@@ -44,6 +44,11 @@ input {
   border-radius: 6px;
   border: none;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.botao:hover {
+  transform: translateY(1px);
 }
 
 .divImg {
