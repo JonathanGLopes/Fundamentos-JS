@@ -20,7 +20,7 @@ function criaPoke(poke){
     $id.textContent = `#${poke.id}`;
     $id.classList.add("id");
 
-    $nome.textContent = poke.name;
+    $nome.textContent = poke.name.charAt(0).toUpperCase() + poke.name.slice(1);
     $nome.classList.add("nome");
 
     const tipos = poke.types.map(type => type.type.name);
@@ -30,9 +30,10 @@ function criaPoke(poke){
     $img.setAttribute("src", url);
 
     $div.classList.add("card-poke");
-    $div.append($id, $nome, $tipo, $img);
+    $div.append($img, $nome, $tipo, $id);
     content.append($div);
 }
+
 
 async function pesquisaPoke(poke){
     await fetch(`https://pokeapi.co/api/v2/pokemon/${poke}`)
