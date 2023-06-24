@@ -41,3 +41,50 @@ img {
     flex-direction: column;
     align-items: center;
 }
+
+.types {
+    display: flex;
+    gap: 6px;
+    overflow-x: scroll;
+    width: 200px;
+    margin: 30px auto 20px auto;
+}
+
+.type-btn {
+    cursor: pointer;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .5rem;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+.type-icon {
+    width: 1rem;
+}
+
+.fire {background: rgb(255, 153, 0);}
+.water{background: rgb(20, 168, 255);}
+.grass{background: rgb(28, 216, 14);}
+.normal{background: rgb(159, 163, 157);}
+.eletric{background: rgb(255, 222, 0);}
+.fighting{background: rgb(255, 33, 91);}
+.rock{background: rgb(216, 188, 90);}
+.ground{background: rgb(255, 107, 13);}
+.bug{background: rgb(123, 207, 0);}
+.flying{background: rgb(137, 189, 255);}
+.ghost{background: rgb(78, 106, 255);}
+.fairy{background: rgb(255, 118, 255);}
+.dark{background: rgb(90, 86, 106);}
+.dragon{background: rgb(0, 118, 255);}
+.steel{background: rgb(35, 161, 189);}
+.psychic{background: rgb(255, 108, 100);}
+.poison{background: rgb(241, 73, 255);}
+.ice{background: rgb(46, 228, 198);}
