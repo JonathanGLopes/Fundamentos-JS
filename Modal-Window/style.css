@@ -52,6 +52,29 @@
   p {
     font-size: 1.8rem;
   }
+
+  .buttons {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0 auto;
+  }
+
+  .buttons > button {
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+  }
+
+  .btn-yes:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+  }
+  .btn-no:hover{
+    background-color: lightcoral;
+    cursor: pointer;
+  }
   
   /* -------------------------- */
   /* CLASSES TO MAKE MODAL WORK */
