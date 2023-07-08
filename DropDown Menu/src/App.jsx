@@ -8,6 +8,7 @@ import inbox from './assets/envelope.png';
 import settings from './assets/settings.png';
 import help from './assets/question.png';
 import logout from './assets/log-out.png';
+import Counter from './Components/Counter';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -30,6 +31,7 @@ function App() {
             <DropdownItem img={logout} text={"Logout"} />
           </ul>
         </div>
+        <Counter />
       </div>
     </>
   )

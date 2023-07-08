@@ -1,0 +1,38 @@
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+span {
+    font-size: 25px;
+}
+
+.sub {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: lightcoral;
+    border: none;
+    border-radius: 12px;
+    width: 30px;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.plus {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 12px;
+    width: 30px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
