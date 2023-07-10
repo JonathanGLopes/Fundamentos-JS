@@ -9,6 +9,7 @@ import settings from './assets/settings.png';
 import help from './assets/question.png';
 import logout from './assets/log-out.png';
 import Counter from './Components/Counter';
+import MenuHamburguer from './Components/MenuHamburguer';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -33,6 +34,7 @@ function App() {
         </div>
         <Counter />
       </div>
+      <MenuHamburguer />
     </>
   )
 }
