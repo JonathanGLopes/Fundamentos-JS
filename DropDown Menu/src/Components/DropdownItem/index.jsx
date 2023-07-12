@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function DropdownItem(props){
+export default function DropdownItem({img, text}){
     return(
         <li className="dropdownItem">
-            <img src={props.img} />
-            <a> {props.text} </a>
+            <img src={img} />
+            <a> {text} </a>
         </li>
     )
 }

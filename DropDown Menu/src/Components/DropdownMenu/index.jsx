@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function DropdownMenu(props){
+export default function DropdownMenu({text}){
     return(
         <li className="DropdownMenu">
-            <a>{props.text}</a>
+            <a>{text}</a>
         </li>
     )
 }
