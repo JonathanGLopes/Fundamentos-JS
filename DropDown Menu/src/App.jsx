@@ -10,6 +10,7 @@ import help from './assets/question.png';
 import logout from './assets/log-out.png';
 import Counter from './Components/Counter';
 import MenuHamburguer from './Components/MenuHamburguer';
+import Advices from './Components/Advices';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -32,6 +33,7 @@ function App() {
             <DropdownItem img={logout} text={"Logout"} />
           </ul>
         </div>
+        <Advices />
         <Counter />
       </div>
       <MenuHamburguer />
