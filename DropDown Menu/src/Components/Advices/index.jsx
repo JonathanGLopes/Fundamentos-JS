@@ -2,7 +2,7 @@ import { useState } from "react";
 import './Advices.css';
 
 export default function Advices(){
-    const [advice, setAdvice] = useState("");
+    const [advice, setAdvice] = useState("Get your advice by clicking on button");
     const [count, setCount] = useState(0);
 
     async function getAdvice(){
