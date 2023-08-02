@@ -33,3 +33,7 @@ console.log(nomeRestaurante, horario);
 //Caso a propriedade não exista no objeto, podemos definir um valor padrão para a variável.
 const {supervision = 'aprovado'} = restaurante;
 console.log(supervision);
+
+// Settando um valor default para uma propriedade que não existe no objeto
+const {menu = [], starterMenu: starter = []} = restaurante;
+console.log(menu, starter);
