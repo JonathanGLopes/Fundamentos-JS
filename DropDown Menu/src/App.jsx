@@ -1,5 +1,5 @@
 import DropdownItem from './Components/DropdownItem';
-import React, {useState} from 'react';
+import {useState} from 'react';
 
 import perfil from './assets/perfil.jpg';
 import user from './assets/user.png';
