@@ -1,0 +1,7 @@
+.center-time {
+  width: 600px;
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+}
