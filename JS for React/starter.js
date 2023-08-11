@@ -156,6 +156,22 @@ console.log(title, author, pages, publicationDate, genres, hasMovieAdaptation);
 
 // Destructuring Array
 
-const [primaryGenre, secondaryGenre] = genres;
+const [primaryGenre, ...otherGengers] = genres;
 
-console.log(primaryGenre, secondaryGenre);
+console.log(primaryGenre, otherGengers);
+
+// Spread Operator - Array
+
+const newGenres = [...genres, "Sci-fi"];
+console.log(newGenres);
+
+// Spread Operator - Object
+
+const updatedBook = {
+  ...book,
+  //Adding a new property
+  moviePublicationDate: "2002-11-19",
+  //Overwriting an existing property
+  pages: 1210,
+};
+console.log(updatedBook);
