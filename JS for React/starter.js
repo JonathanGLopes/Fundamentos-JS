@@ -147,7 +147,7 @@ function getBook(id) {
 
 // Destructuring Object
 
-const book = getBook(2);
+const book = getBook(1);
 
 const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
   book;
@@ -175,3 +175,8 @@ const updatedBook = {
   pages: 1210,
 };
 console.log(updatedBook);
+
+// Template Literals
+
+const summary = `${title}, a ${pages}-page long book, war written by ${author} and published in ${publicationDate}`;
+console.log(summary);
