@@ -180,3 +180,7 @@ console.log(updatedBook);
 
 const summary = `${title}, a ${pages}-page long book, war written by ${author} and published in ${publicationDate}`;
 console.log(summary);
+
+//Ternaries
+const pagesRange = pages > 1000 ? "over a thousand" : "Less than 1000";
+console.log(`The book has ${pagesRange} pages`);
