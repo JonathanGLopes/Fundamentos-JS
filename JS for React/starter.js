@@ -147,7 +147,7 @@ function getBook(id) {
 
 // Destructuring Object
 
-const book = getBook(1);
+const book = getBook(3);
 
 const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
   book;
@@ -188,3 +188,11 @@ console.log(`The book has ${pagesRange} pages`);
 // Arrow function
 const getYear = (string) => string.split("-")[0];
 console.log(getYear(publicationDate));
+
+function getTotalReviewCount(book) {
+  const goodreads = book.reviews.goodreads.reviewsCount;
+  const librarything = book.reviews.librarything?.reviewsCount ?? 0;
+
+  return goodreads + librarything;
+}
+console.log(getTotalReviewCount(book));
