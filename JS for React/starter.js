@@ -189,6 +189,7 @@ console.log(`The book has ${pagesRange} pages`);
 const getYear = (string) => string.split("-")[0];
 console.log(getYear(publicationDate));
 
+//Optional chaining
 function getTotalReviewCount(book) {
   const goodreads = book.reviews.goodreads.reviewsCount;
   const librarything = book.reviews.librarything?.reviewsCount ?? 0;
@@ -196,3 +197,12 @@ function getTotalReviewCount(book) {
   return goodreads + librarything;
 }
 console.log(getTotalReviewCount(book));
+
+// Map
+const books = getBooks();
+
+const titles = books.map((book) => ({
+  title: book.title,
+  author: book.author,
+}));
+console.log(titles);
