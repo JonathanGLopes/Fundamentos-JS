@@ -205,4 +205,7 @@ const titles = books.map((book) => ({
   title: book.title,
   author: book.author,
 }));
-console.log(titles);
+
+const num = [1, 2, 4, 6];
+const nums = num.map((n) => (n *= 2));
+console.log(titles, nums);
