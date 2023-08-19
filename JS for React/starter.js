@@ -209,3 +209,14 @@ const titles = books.map((book) => ({
 const num = [1, 2, 4, 6];
 const nums = num.map((n) => (n *= 2));
 console.log(titles, nums);
+
+//Filter
+const longBooksWithMovie = books
+  .filter((book) => book.pages > 500)
+  .filter((book) => book.hasMovieAdaptation);
+console.log(longBooksWithMovie);
+
+const adventureBooks = books
+  .filter((books) => books.genres.includes("adventure"))
+  .map((book) => book.title);
+console.log(adventureBooks);
