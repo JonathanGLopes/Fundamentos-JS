@@ -249,3 +249,8 @@ const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
 const booksAfterUpdate = booksAfterDelete.map((book) =>
   book.id === 1 ? { ...book, pages: 1 } : book
 );
+
+// Promises
+// fetch("https://jsonplaceholder.typicode.com/todos")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
