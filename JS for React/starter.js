@@ -256,6 +256,7 @@ const booksAfterUpdate = booksAfterDelete.map((book) =>
 //   .then((data) => console.log(data));
 
 // Asynchronous Async/Await
+
 // async function getTodos() {
 //   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
 //   const data = await res.json();
