@@ -250,6 +250,8 @@ const booksAfterUpdate = booksAfterDelete.map((book) =>
   book.id === 1 ? { ...book, pages: 1 } : book
 );
 
+// Exemplo abaixo nos comentários pois a lógica deve ser executada no navegador.
+
 // Promises
 // fetch("https://jsonplaceholder.typicode.com/todos")
 //   .then((res) => res.json())
