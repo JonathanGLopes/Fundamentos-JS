@@ -14,3 +14,8 @@ listaNumeros = Array.from(
 );
 
 console.log(listaNumeros);
+
+// Usando o Array.from para transformar um iterável em um array.
+const nome = "Jonathan";
+const nomeArray = Array.from(nome);
+console.log(nomeArray);
