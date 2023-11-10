@@ -12,6 +12,7 @@ import Counter from "./Components/Counter";
 import MenuHamburguer from "./Components/MenuHamburguer";
 import Advices from "./Components/Advices";
 import Timer from "./Components/Timer";
+import AlertButton from "./Components/AlertButton";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -44,6 +45,7 @@ function App() {
         <Advices />
         <Counter />
         <Timer />
+        <AlertButton />
       </div>
       <MenuHamburguer />
     </>
