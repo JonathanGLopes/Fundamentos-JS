@@ -1,9 +1,11 @@
+import "../../index.css";
+
 function AlertButton() {
   return (
-    <>
+    <div className="buttons">
       <Button message="Button 01">Button 01</Button>
       <Button message="Button 02">Button 02</Button>
-    </>
+    </div>
   );
 }
 
