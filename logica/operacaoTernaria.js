@@ -7,13 +7,21 @@ const pontosUsuario = 999;
 // }
 
 let idade = 20;
-const pessoa = idade >= 18 ? 'Adulto' : 'Menor de idade';
-console.log(pessoa)
+const pessoa = idade >= 18 ? "Adulto" : "Menor de idade";
+console.log(pessoa);
 
-
-const nivelUsuario = pontosUsuario >= 1000 ? 'Usuário VIP' : 'Usuário normal';
+const nivelUsuario = pontosUsuario >= 1000 ? "Usuário VIP" : "Usuário normal";
 console.log(nivelUsuario);
 
 /*
     No código acima temos em uma linha a mesma funcionalidade do if else comentado, esse é um exemplo de operação ternária para aumentar a produtividade e diminuir linhas de código.
 */
+
+const numeroInicial = 13;
+const numeroFinal = 10;
+
+const comparador =
+  numeroInicial > numeroFinal
+    ? "Insira um número entre 1 e 10"
+    : `O ${numeroInicial} é valido`;
+console.log(comparador);
