@@ -130,13 +130,20 @@ h3 span {
 }
 
 .buttons {
+  position: absolute;
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
 .buttons button {
+  width: 100px;
   padding: 6px;
   background-color: #646cff;
   border: none;
   border-radius: 6px;
+}
+
+img {
+  width: 300px;
 }

@@ -1,10 +1,19 @@
 import "../../index.css";
+import image from "../../assets/This-is-a-test.jpg";
+import { useState } from "react";
 
 function AlertButton() {
+  const [showImage, setShowImage] = useState(false);
+
+  function handleClick() {
+    setShowImage(!showImage);
+  }
+
   return (
     <div className="buttons">
-      <Button message="Button 01">Button 01</Button>
-      <Button message="Button 02">Button 02</Button>
+      <Button message="Button was clicked!">Test Button</Button>
+      <button onClick={handleClick}>Image Button</button>
+      {showImage && <img src={image} />}
     </div>
   );
 }
